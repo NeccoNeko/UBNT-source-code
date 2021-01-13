@@ -1,0 +1,266 @@
+choice
+	prompt "Alpine board select"
+
+config TARGET_ALPINE_DB
+	bool "Alpine development board"
+
+config TARGET_ALPINE_V2_32_DB
+	bool "Alpine V2 development board - 32 bits"
+
+config TARGET_ALPINE_V2_64_DB
+	bool "Alpine V2 development board - 64 bits"
+
+config TARGET_ALPINE_V2_64_UBNT
+	bool "Alpine V2 UBNT board - 64 bits"
+
+config TARGET_ALPINE_V2_64_UBNT_PLUS
+	bool "Alpine V2 UBNT PLUS board - 64 bits"
+
+config TARGET_ALPINE_V2_64_UBNT_RM
+	bool "Alpine V2 UBNT RM board - 64 bits"
+
+config TARGET_ALPINE_V2_64_UBNT_PLUS_RM
+	bool "Alpine V2 UBNT PLUS RM board - 64 bits"
+
+config TARGET_ALPINE_V2_64_UBNT_UXGP
+	bool "Alpine V2 UBNT UXG PRO board - 64 bits"
+
+config TARGET_ALPINE_V2_64_UBNT_UXGP_LTE
+	bool "Alpine V2 UBNT UXG PRO LTE board - 64 bits"
+
+config TARGET_ALPINE_V2_64_UBNT_UXG_HD
+	bool "Alpine V2 UBNT UXG HD board - 64 bits"
+
+config TARGET_ALPINE_V2_64_UBNT_U6WALL
+	bool "Alpine V2 UBNT U6WALL board - 64 bits"
+
+config TARGET_ALPINE_V2_64_UBNT_U6WALL_PRO
+	bool "Alpine V2 UBNT U6WALL PRO board - 64 bits"
+
+config TARGET_ALPINE_V2_64_UBNT_UDM_PRO_SE
+	bool "Alpine V2 UBNT UDM PRO SE board - 64 bits"
+
+config TARGET_ALPINE_V2_64_UBNT_NAS
+	bool "Alpine V2 UBNT NAS board - 64 bits"
+
+config TARGET_ALPINE_V2_64_UBNT_NAS_AI
+	bool "Alpine V2 UBNT NAS AI board - 64 bits"
+
+config TARGET_ALPINE_V2_64_UBNT_NAS_PRO
+	bool "Alpine V2 UBNT NAS PRO board - 64 bits"
+
+config TARGET_ALPINE_V2_64_UBNT_NAS_HD
+	bool "Alpine V2 UBNT NAS HD board - 64 bits"
+
+config TARGET_ALPINE_V2_64_UBNT_UDC
+	bool "Alpine V2 UBNT UDC board - 64 bits"
+
+config TARGET_ALPINE_V3_TC_64_DB
+	bool "Alpine V3 TC development board - 64 bits"
+
+config TARGET_ALPINE_V3_64_DB
+	bool "Alpine V3 development board - 64 bits"
+
+endchoice
+
+if TARGET_ALPINE_DB
+
+config SYS_BOARD
+	default "alpine_db"
+
+config SYS_CONFIG_NAME
+	default "alpine_db"
+
+endif
+
+if TARGET_ALPINE_V2_32_DB
+
+config SYS_BOARD
+	default "alpine_db"
+
+config SYS_CONFIG_NAME
+	default "alpine_v2_32_db"
+
+endif
+
+if TARGET_ALPINE_V2_64_DB
+
+config SYS_BOARD
+	default "alpine_db"
+
+config SYS_CONFIG_NAME
+	default "alpine_v2_64_db"
+
+endif
+
+if TARGET_ALPINE_V2_64_UBNT
+
+config SYS_BOARD
+	default "alpine_ubnt"
+
+config SYS_CONFIG_NAME
+	default "alpine_v2_64_ubnt"
+
+endif
+
+if TARGET_ALPINE_V2_64_UBNT_PLUS
+
+config SYS_BOARD
+	default "alpine_ubnt"
+
+config SYS_CONFIG_NAME
+	default "alpine_v2_64_ubnt_plus"
+
+endif
+
+if TARGET_ALPINE_V2_64_UBNT_RM
+
+config SYS_BOARD
+	default "alpine_ubnt"
+
+config SYS_CONFIG_NAME
+	default "alpine_v2_64_ubnt_rm"
+
+endif
+
+if TARGET_ALPINE_V2_64_UBNT_PLUS_RM
+
+config SYS_BOARD
+	default "alpine_ubnt"
+
+config SYS_CONFIG_NAME
+	default "alpine_v2_64_ubnt_plus_rm"
+
+endif
+
+if TARGET_ALPINE_V2_64_UBNT_UXGP
+
+config SYS_BOARD
+	default "alpine_ubnt"
+
+config SYS_CONFIG_NAME
+	default "alpine_v2_64_ubnt_uxgp"
+
+endif
+
+
+if TARGET_ALPINE_V2_64_UBNT_UXGP_LTE
+
+config SYS_BOARD
+	default "alpine_ubnt"
+
+config SYS_CONFIG_NAME
+	default "alpine_v2_64_ubnt_uxgp_lte"
+
+endif
+
+
+if TARGET_ALPINE_V2_64_UBNT_UXG_HD
+
+config SYS_BOARD
+	default "alpine_ubnt"
+
+config SYS_CONFIG_NAME
+	default "alpine_v2_64_ubnt_uxg_hd"
+
+endif
+
+if TARGET_ALPINE_V2_64_UBNT_U6WALL
+
+config SYS_BOARD
+	default "alpine_ubnt"
+
+config SYS_CONFIG_NAME
+	default "alpine_v2_64_ubnt_u6wall"
+
+endif
+
+if TARGET_ALPINE_V2_64_UBNT_U6WALL_PRO
+
+config SYS_BOARD
+	default "alpine_ubnt"
+
+config SYS_CONFIG_NAME
+	default "alpine_v2_64_ubnt_u6wall_pro"
+
+endif
+
+if TARGET_ALPINE_V2_64_UBNT_UDM_PRO_SE
+
+config SYS_BOARD
+	default "alpine_ubnt"
+
+config SYS_CONFIG_NAME
+	default "alpine_v2_64_ubnt_udm_pro_se"
+
+endif
+
+if TARGET_ALPINE_V2_64_UBNT_NAS
+
+config SYS_BOARD
+	default "alpine_ubnt"
+
+config SYS_CONFIG_NAME
+	default "alpine_v2_64_ubnt_nas"
+
+endif
+
+if TARGET_ALPINE_V2_64_UBNT_NAS_AI
+
+config SYS_BOARD
+	default "alpine_ubnt"
+
+config SYS_CONFIG_NAME
+	default "alpine_v2_64_ubnt_nas_ai"
+
+endif
+
+if TARGET_ALPINE_V2_64_UBNT_NAS_PRO
+
+config SYS_BOARD
+	default "alpine_ubnt"
+
+config SYS_CONFIG_NAME
+	default "alpine_v2_64_ubnt_nas_pro"
+
+endif
+
+if TARGET_ALPINE_V2_64_UBNT_NAS_HD
+
+config SYS_BOARD
+	default "alpine_ubnt"
+
+config SYS_CONFIG_NAME
+	default "alpine_v2_64_ubnt_nas_hd"
+
+endif
+
+if TARGET_ALPINE_V2_64_UBNT_UDC
+
+config SYS_BOARD
+	default "alpine_ubnt"
+
+config SYS_CONFIG_NAME
+	default "alpine_v2_64_ubnt_udc"
+
+endif
+
+if TARGET_ALPINE_V3_TC_64_DB
+
+config SYS_BOARD
+	default "alpine_db"
+
+config SYS_CONFIG_NAME
+	default "alpine_v3_tc_64_db"
+
+endif
+
+if TARGET_ALPINE_V3_64_DB
+
+config SYS_BOARD
+	default "alpine_db"
+
+config SYS_CONFIG_NAME
+	default "alpine_v3_64_db"
+
+endif

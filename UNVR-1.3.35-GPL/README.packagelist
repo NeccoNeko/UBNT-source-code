@@ -1,0 +1,5 @@
+If "Source Site" in packagelist is empty, the package is downloaded from the following apt source list
+deb http://deb.debian.org/debian/ stretch main contrib non-free
+deb http://deb.debian.org/debian/ stretch-updates main contrib non-free
+deb http://deb.debian.org/debian/ stretch-backports main
+deb http://security.debian.org/ stretch/updates main contrib non-free
